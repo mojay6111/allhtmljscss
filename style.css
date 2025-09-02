@@ -1,0 +1,420 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#result, #dom-message {
+  margin-top: 15px;
+  font-size: 18px;
+  color: green;
+}
+
+
+#mouse-box {
+  width: 200px;
+  height: 100px;
+  margin: 20px auto;
+  line-height: 100px;
+  background-color: lightblue;
+  border: 2px solid #000;
+  transition: background-color 0.3s;
+}
+
+#key-input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* You can reuse existing button styles and paragraph styles for timers */
+#timer-result {
+  margin-top: 15px;
+  font-size: 18px;
+  color: darkred;
+}
+
+#item-list {
+  list-style-type: disc;
+  margin-top: 15px;
+  font-size: 18px;
+  color: darkgreen;
+}
+
+
+#style-message {
+  margin-top: 15px;
+  font-size: 18px;
+  color: navy;
+  transition: all 0.3s;
+}
+
+/* A CSS class to toggle */
+.highlight {
+  background-color: yellow;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+#demo-img {
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #ccc;
+  padding: 4px;
+}
+
+#attr-result {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+/* Section 8: Toggle Content */
+#toggleContent {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #444;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+
+/* Section 9: Double Click Event Example */
+#dblclickBtn {
+  background-color: #673ab7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#dblclickBtn:hover {
+  background-color: #5e35b1;
+}
+
+#dblclickMessage {
+  font-weight: bold;
+  color: #673ab7;
+  margin-top: 10px;
+}
+
+
+/* Section 10 Styles */
+#hoverBtn {
+  background-color: lightblue;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#hoverBtn:hover {
+  background-color: deepskyblue;
+  color: white;
+}
+
+#hoverMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+
+
+/* Section 11: Mouse Move Event */
+#mouseBox11 {
+  width: 300px;
+  height: 150px;
+  border: 2px solid #ff9800;
+  background-color: #fff3e0;
+  text-align: center;
+  line-height: 150px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+#mouseCoords11 {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #e65100;
+}
+
+
+/* Section 12: Input Field Events */
+#nameInput {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#nameInput:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+#inputMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00796b;
+}
+
+
+/* Section 13: Form Submit Event */
+#demoForm {
+  margin-top: 10px;
+}
+
+#demoForm input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#demoForm button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#demoForm button:hover {
+  background-color: #ef6c00;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+
+/* Section 14: Timer Events */
+#timeoutBtn, #intervalBtn, #stopIntervalBtn {
+  padding: 8px 16px;
+  margin: 5px 5px 10px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #009688;
+  color: white;
+  transition: 0.3s;
+}
+
+#timeoutBtn:hover, #intervalBtn:hover, #stopIntervalBtn:hover {
+  background-color: #00796b;
+}
+
+#timeoutMessage {
+  font-weight: bold;
+  color: #00796b;
+  margin-top: 5px;
+}
+
+
+
+/* Section 15: Window Events */
+#windowSize, #scrollPos {
+  font-weight: bold;
+  color: #006064;
+  margin-top: 5px;
+}
+
+/* Section 16: Drag & Drop Events */
+#dragItem {
+  width: 120px;
+  height: 50px;
+  background-color: #ffcc80;
+  border: 2px solid #ff9800;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 10px;
+  cursor: grab;
+  user-select: none;
+}
+
+#dropZone {
+  width: 200px;
+  height: 100px;
+  border: 2px dashed #ff9800;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff3e0;
+}
+
+#dragMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f57c00;
+}
+
+
+/* Section 17: Clipboard Events */
+#clipboardInput {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#clipboardMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #3f51b5;
+}
+
+
+/* Section 18: Media Events */
+#youtubeLink {
+  width: 60%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#loadVideoBtn {
+  padding: 8px 16px;
+  margin-left: 5px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#loadVideoBtn:hover {
+  background-color: #d32f2f;
+}
+
+#videoContainer iframe {
+  width: 560px;
+  height: 315px;
+  border: none;
+}
+#videoMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+
+/* Section 18b: YouTube Video with Media Event Detection */
+#youtubeLinkB {
+  width: 60%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#loadVideoBtnB {
+  padding: 8px 16px;
+  margin-left: 5px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#loadVideoBtnB:hover {
+  background-color: #303f9f;
+}
+
+#videoContainerB iframe {
+  width: 560px;
+  height: 315px;
+  border: none;
+}
+#videoMessageB {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #303f9f;
+}
+
+/* Section 19: Keyboard Events */
+#keyboardInput {
+  width: 60%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+#keyMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+
+/* Section 20: Form Events */
+#demoForm input, #demoForm select {
+  width: 60%;
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#demoForm button {
+  padding: 8px 16px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#demoForm button:hover {
+  background-color: #00796b;
+}
+
+#formMessage {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #009688;
+}
+
+
+/* Section 21: Touch Events */
+#touchArea {
+  font-size: 18px;
+  color: #333;
+  border-radius: 6px;
+  text-align: center;
+  user-select: none;
+  touch-action: none; /* Prevent default scrolling for demo */
+}
+
+/* Section 22: Custom / Other Events */
+#errorImage {
+  display: block;
+  margin-top: 10px;
+}
+
+#contextArea, #wheelArea {
+  border-radius: 6px;
+  text-align: center;
+  user-select: none;
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Events Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JavaScript Events and DOM Manipulation</h1>
+
+  <!-- Step 1: Alerts, Confirm, Prompt -->
+  <h2>Step 1: Alerts, Confirm, and Prompt</h2>
+  <p>This section demonstrates basic JavaScript popups and getting input from the user.</p>
+  <button id="alert-btn">Show Alert</button>
+  <button id="confirm-btn">Show Confirm</button>
+  <button id="prompt-btn">Show Prompt</button>
+  <p id="result"></p>
+
+  <!-- Step 2: DOM Manipulation -->
+  <h2>Step 2: DOM Manipulation</h2>
+  <p>In this section, we dynamically change the text and style of elements using JavaScript.</p>
+  <p id="dom-message">This text will change when you click the button below.</p>
+  <button id="dom-btn">Change Text and Style</button>
+
+  <!-- Step 3: Event Types -->
+<h2>Step 3: Mouse and Keyboard Events</h2>
+<p>Hover over the box or type something in the input field to see events in action.</p>
+
+<div id="mouse-box">Hover over me!</div>
+<input type="text" id="key-input" placeholder="Type something here...">
+<p id="event-result"></p>
+
+<!-- Step 4: Timers -->
+<h2>Step 4: Timers</h2>
+<p>This section demonstrates how to run code automatically after a delay or repeatedly at intervals.</p>
+
+<button id="timeout-btn">Run setTimeout</button>
+<button id="interval-btn">Start setInterval</button>
+<button id="stop-interval-btn">Stop setInterval</button>
+
+<p id="timer-result"></p>
+
+
+<!-- Step 5: Creating and Removing Elements -->
+<h2>Step 5: Creating and Removing Elements</h2>
+<p>This section demonstrates how to add new elements dynamically and remove them from the page.</p>
+
+<button id="add-item-btn">Add Item</button>
+<button id="remove-item-btn">Remove Last Item</button>
+
+<ul id="item-list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+
+<!-- Step 6: CSS Manipulation -->
+<h2>Step 6: CSS Manipulation with JavaScript</h2>
+<p>This section shows how to change styles dynamically and toggle CSS classes using JavaScript.</p>
+
+<p id="style-message">Watch me change colors and size!</p>
+<button id="change-style-btn">Change Style</button>
+<button id="toggle-class-btn">Toggle Highlight Class</button>
+
+
+<!-- Step 7: Changing HTML Attributes -->
+<h2>Step 7: Changing HTML Attributes</h2>
+<p>JavaScript can change attributes like <code>src</code>, <code>href</code>, and <code>alt</code> to update images and links dynamically.</p>
+
+<img id="demo-img" src="https://via.placeholder.com/150" alt="Placeholder image">
+<p><a id="demo-link" href="https://example.com" target="_blank" rel="noopener" >Visit Example</a></p>
+
+<button id="swap-img-btn">Swap Image</button>
+<button id="toggle-alt-btn">Toggle Alt Text</button>
+<button id="update-link-btn">Update Link</button>
+
+<p id="attr-result"></p>
+
+
+  <!-- Section 8: Toggle Content -->
+  <section>
+    <h2>8. Toggle Show/Hide Content</h2>
+    <p>This example shows how to use a button click to show or hide some content dynamically.</p>
+    <button id="toggleBtn">Show/Hide Content</button>
+    <p id="toggleContent">This content can be hidden or shown using the button above.</p>
+  </section>
+
+
+  <!-- Section 9: Double Click Event Example -->
+  <section>
+    <h2>Section 9: Double Click Event Example</h2>
+    <p>
+      The <code>ondblclick</code> event triggers when an element is double-clicked.
+      This can be useful for things like highlighting, zooming, or opening extra details.
+    </p>
+    <button id="dblclickBtn">Double Click Me</button>
+    <p id="dblclickMessage"></p>
+  </section>
+
+
+<!-- Section 10 Explanation -->
+  <section>
+    <h2>Section 10: Mouse Over & Mouse Out Events Example</h2>
+    <p>
+      The <code>mouseover</code> event triggers when the mouse pointer enters an element, 
+      and the <code>mouseout</code> event triggers when the pointer leaves. 
+      These are useful for interactive UI effects such as highlighting menus, tooltips, 
+      or changing button styles when a user hovers over them.
+    </p>
+
+    <button id="hoverBtn">Hover Over Me</button>
+    <p id="hoverMessage"></p>
+  </section>
+
+
+
+<!-- Section 11: Mouse Move Event -->
+<section>
+  <h2>Section 11: Mouse Move Event Example</h2>
+  <p>Move your mouse inside the box to see the current coordinates displayed in real time.</p>
+  <div id="mouseBox11">Move your mouse here!</div>
+  <p id="mouseCoords11">X: 0, Y: 0</p>
+</section>
+
+
+
+<!-- Section 12: Input Field Events -->
+<section>
+  <h2>Section 12: Input Field Events (focus, blur, change)</h2>
+  <p>
+    JavaScript can detect when an input field is focused, blurred, or changed.
+    This is useful for form validation, providing hints, or dynamic feedback.
+  </p>
+
+  <label for="nameInput">Enter your name:</label>
+  <input type="text" id="nameInput" placeholder="Type your name">
+
+  <p id="inputMessage"></p>
+</section>
+
+<!-- Section 13: Form Submit Event -->
+<section>
+  <h2>Section 13: Form Submit Event Example</h2>
+  <p>
+    The <code>submit</code> event occurs when a form is submitted.
+    JavaScript can intercept the submission to validate data or show custom messages.
+  </p>
+
+  <form id="demoForm">
+    <label for="emailInput">Email:</label>
+    <input type="email" id="emailInput" placeholder="Enter your email" required>
+    <br><br>
+    <button type="submit">Submit Form</button>
+  </form>
+
+  <p id="formMessage"></p>
+</section>
+
+
+<!-- Section 14: Timer Events -->
+<section>
+  <h2>Section 14: Timer Events (setTimeout & setInterval)</h2>
+  <p>
+    JavaScript provides timer functions: <code>setTimeout</code> runs code once after a delay,
+    and <code>setInterval</code> runs code repeatedly at specified intervals.
+  </p>
+
+  <button id="timeoutBtn">Show Message After 3 Seconds</button>
+  <p id="timeoutMessage"></p>
+
+  <button id="intervalBtn">Start Counter</button>
+  <p>Counter: <span id="counter">0</span></p>
+  <button id="stopIntervalBtn">Stop Counter</button>
+</section>
+
+
+<!-- Section 15: Window Events -->
+<section>
+  <h2>Section 15: Window Events (resize & scroll)</h2>
+  <p>
+    JavaScript can detect when the browser window is resized or scrolled.
+    This allows dynamic adjustments to the layout or showing information based on scroll position.
+  </p>
+
+  <p>Resize the window to see the dimensions:</p>
+  <p id="windowSize">Width: , Height: </p>
+
+  <p>Scroll down this page to see the scroll position:</p>
+  <div style="height:500px; background-color:#e0f7fa; margin-bottom:20px;"></div>
+  <p id="scrollPos">Scroll Y: 0</p>
+</section>
+
+<!-- Section 16: Drag & Drop Events -->
+<section>
+  <h2>Section 16: Drag & Drop Events</h2>
+  <p>
+    Drag and drop allows users to move elements by dragging them and dropping them into a target area.
+  </p>
+
+  <div id="dragItem" draggable="true">Drag Me!</div>
+  <div id="dropZone">Drop Here!</div>
+  <p id="dragMessage"></p>
+</section>
+
+
+<!-- Section 17: Clipboard Events -->
+<section>
+  <h2>Section 17: Clipboard Events (copy, cut, paste)</h2>
+  <p>
+    JavaScript can detect when a user copies, cuts, or pastes content into input fields or text areas.
+  </p>
+
+  <textarea id="clipboardInput" rows="4" cols="50" placeholder="Try copying, cutting, or pasting text here..."></textarea>
+  <p id="clipboardMessage"></p>
+</section>
+
+
+<!-- Section 18: Media Events -->
+<section>
+  <h2>Section 18: Media Events (play, pause, ended)</h2>
+  <p>
+    You can play videos directly in the browser. JavaScript can detect when the media is played, paused, or ended.
+  </p>
+
+  <label for="youtubeLink">Enter YouTube Video Link:</label>
+  <input type="text" id="youtubeLink" placeholder="Paste YouTube link here">
+  <button id="loadVideoBtn">Load Video</button>
+
+  <div id="videoContainer" style="margin-top:15px;">
+    <!-- YouTube iframe will be added here -->
+  </div>
+  <p id="videoMessage"></p>
+</section>
+
+<!-- Section 18b: YouTube Video with Media Event Detection -->
+<section>
+  <h2>Section 18b: YouTube Video with Media Event Detection</h2>
+  <p>
+    This version detects when a YouTube video is played, paused, or ended using the YouTube IFrame API.
+  </p>
+
+  <label for="youtubeLinkB">Enter YouTube Video Link:</label>
+  <input type="text" id="youtubeLinkB" placeholder="Paste YouTube link here">
+  <button id="loadVideoBtnB">Load Video</button>
+
+  <div id="videoContainerB" style="margin-top:15px;">
+    <!-- YouTube iframe will be added here -->
+  </div>
+  <p id="videoMessageB"></p>
+</section>
+
+<!-- Load YouTube IFrame API -->
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<!-- Section 19: Keyboard Events -->
+<section>
+  <h2>Section 19: Keyboard Events (keydown, keyup, keypress)</h2>
+  <p>
+    JavaScript can detect when keys are pressed, held down, or released. This helps create interactive experiences.
+  </p>
+
+  <label for="keyboardInput">Type something here:</label>
+  <input type="text" id="keyboardInput" placeholder="Press keys...">
+  <p id="keyMessage"></p>
+</section>
+
+
+<!-- Section 20: Form Events -->
+<section>
+  <h2>Section 20: Form Events (focus, blur, change, submit)</h2>
+  <p>
+    Form events let us respond to user actions inside input fields or forms. These include focusing on fields, leaving fields, changing values, and submitting the form.
+  </p>
+
+  <form id="demoForm">
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <br><br>
+
+    <label for="emailInput">Email:</label>
+    <input type="email" id="emailInput" placeholder="Enter your email">
+    <br><br>
+
+    <label for="genderSelect">Gender:</label>
+    <select id="genderSelect">
+      <option value="">Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <label for="subscribeCheckbox">
+      <input type="checkbox" id="subscribeCheckbox"> Subscribe to newsletter
+    </label>
+    <br><br>
+
+    <button type="submit" id="formSubmitBtn">Submit Form</button>
+  </form>
+
+  <p id="formMessage"></p>
+</section>
+
+<!-- Section 21: Touch Events -->
+<section>
+  <h2>Section 21: Touch Events (touchstart, touchmove, touchend)</h2>
+  <p>
+    Touch events allow us to respond to finger gestures on mobile or touch-enabled devices. We can detect when a user touches the screen, moves their finger, or lifts it.
+  </p>
+
+  <div id="touchArea" style="width: 300px; height: 200px; background-color: #e0e0e0; border: 2px dashed #009688; display: flex; align-items: center; justify-content: center; margin-top: 15px;">
+    Touch here
+  </div>
+
+  <p id="touchMessage" style="margin-top: 10px; font-weight: bold; color: #009688;"></p>
+</section>
+
+
+
+<!-- Section 22: Custom / Other Events -->
+<section>
+  <h2>Section 22: Custom / Other Events</h2>
+  <p>
+    Some events are not part of the standard mouse/keyboard/form set but are important for real-world applications.
+    Here, we demonstrate <strong>error</strong> events for media/images, <strong>contextmenu</strong> (right-click), and advanced <strong>wheel</strong> scrolling.
+  </p>
+
+  <!-- Error Event Example -->
+  <div>
+    <h3>Image Error Event</h3>
+    <img id="errorImage" src="invalid-image.jpg" alt="Broken Image" width="200">
+    <p id="errorMessage" style="color: red; font-weight: bold;"></p>
+  </div>
+
+  <!-- Context Menu Example -->
+  <div style="margin-top:20px;">
+    <h3>Right-Click Context Menu Event</h3>
+    <div id="contextArea" style="width: 300px; height: 150px; background-color: #f0f0f0; border: 2px solid #009688; display: flex; align-items: center; justify-content: center;">
+      Right-click inside this box
+    </div>
+    <p id="contextMessage" style="font-weight: bold; color: #009688;"></p>
+  </div>
+
+  <!-- Wheel Event Example -->
+  <div style="margin-top:20px;">
+    <h3>Wheel Event Example</h3>
+    <div id="wheelArea" style="width: 300px; height: 150px; background-color: #e0e0e0; border: 2px solid #4caf50; display: flex; align-items: center; justify-content: center;">
+      Scroll here with mouse wheel
+    </div>
+    <p id="wheelMessage" style="font-weight: bold; color: #4caf50;"></p>
+  </div>
+</section>
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>
